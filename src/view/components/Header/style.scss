@@ -1,0 +1,36 @@
+.headerTop {
+  margin: 20px auto;
+  padding: 20px;
+  background: #14151A;
+  max-width: 1440px;
+  width: 100%;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .current-time {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &-actions {
+
+    button {
+      background: none;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      margin-right: 4px;
+
+      svg {
+        fill: #F8F8F8;
+      }
+    }
+    &:last-child {
+      margin-right: 0!important;
+    }
+  }
+}

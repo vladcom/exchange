@@ -1,0 +1,14 @@
+.profile {
+  flex: 2;
+  padding: 20px;
+  background: #14151A;
+  width: 100%;
+  color: white;
+  border-radius: 20px;
+
+  &-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

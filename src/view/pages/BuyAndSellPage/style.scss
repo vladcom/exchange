@@ -1,0 +1,93 @@
+.buy-sell-page {
+  &-title {
+    margin: 1rem 0 2.4rem;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  &-input{
+    display: flex;
+    align-items: center;
+  }
+  &-form{
+    margin: 0 auto;
+    padding-right: 2rem;
+    max-width: 540px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  &-text{
+    width: 30%;
+    // flex-basis: 120px;
+  }
+  &-total{
+    margin-left: 24px;
+  }
+  &-date{
+    margin-left: 5px;
+  }
+}
+.buy-sell-page-form .MuiOutlinedInput-root,
+.buy-sell-page-currencyTitle  .MuiSvgIcon-root,
+ .buy-sell-page-form .MuiSvgIcon-colorDisabled{
+  color: #F8F8F8 !important;
+  &:hover {
+    border-color: #495057;
+  }
+}
+.buy-sell-page-form .MuiInputLabel-root,
+.buy-sell-page-form .MuiTypography-root {
+  color: #F8F8F8 !important;
+}
+
+.buy-sell-page-form .MuiOutlinedInput-root .Mui-disabled {
+  -webkit-text-fill-color: #495057 !important;
+}
+.buy-sell-page-form .MuiOutlinedInput-notchedOutline {
+  border-color: #495057;
+  &:hover {
+    border-color: #495057!important;
+  }
+}
+
+.buy-sell-page-form .MuiOutlinedInput-notchedOutline {
+  border-color: #495057!important;
+  &:hover {
+    border-color: #495057!important;
+  }
+}
+.buy-sell-page-form .Mui-focused {
+  border-color: #495057!important;
+}
+
+.buy-sell-page-form .MuiPaginationItem-root, .MuiTablePagination-toolbar{
+  color: rgb(231, 238, 248);
+
+  svg {
+    fill: rgb(231, 238, 248);
+  }
+}
+
+.buy-sell-page-form .Mui-disabled #totalCash{
+  -webkit-text-fill-color: #d1d1d1 !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.cross-course-two-inputs{
+  width: 100%;
+  column-gap: 16px;
+}

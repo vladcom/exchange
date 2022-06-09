@@ -1,0 +1,69 @@
+.cities {
+  padding: 20px;
+  background: #14151A;
+  max-width: 1440px;
+  width: 100%;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+
+  &-main {
+    display: flex;
+    flex-direction: column;
+
+    @media all and (max-width: 1024px) {
+      flex-direction: column;
+    }
+  }
+
+  &-actions {
+    width: 200px;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+
+    .Mui-disabled {
+      border: 1px solid #3c3c3c!important;
+      color: #595959 !important;
+    }
+
+    button {
+      margin-bottom: 20px;
+    }
+  }
+
+  &-table {
+    width: 100%;
+
+    .Mui-disabled {
+      color: #3c3c3c;
+    }
+    thead {
+      th {
+        font-weight: 700;
+        color: rgb(231, 238, 248);
+      }
+      .MuiTableCell-head {
+        border-bottom: 2px solid #90979d;
+      }
+    }
+
+
+    tbody {
+      td {
+        font-weight: 500;
+        color: rgb(231, 238, 248);
+        border-bottom: 1px solid rgb(73, 80, 87);
+      }
+    }
+  }
+
+  .MuiSvgIcon-root {
+    fill: #a3a8ab;
+  }
+  .MuiTable-root {
+
+    min-width: 100%;
+  }
+}

@@ -1,0 +1,62 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffcf52;
+
+  &-container {
+    max-width: 500px;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgb(36, 39, 49);
+    background-clip: border-box;
+    border: 0 solid #dee2e6;
+    border-radius: 2rem;
+    box-shadow: 0 1.6rem 3rem rgba(0, 0, 0, .1);
+
+    &-error {
+      padding: 0 20px 20px;
+      .errorText {
+        margin-top: 0!important;
+        padding-top: 0!important;
+      }
+    }
+
+    &-title {
+      padding: 0;
+      line-height: initial;
+      font-weight: 700 !important;
+      margin-top: 3rem !important;
+      text-align: center;
+      font-size: 1.5rem;
+      color: #ebebeb;
+    }
+
+    &-subTitle {
+      padding: 0;
+      margin-top: 0;
+      line-height: initial;
+      font-weight: 700 !important;
+      text-align: center;
+      font-size: 1rem;
+      color: #ebebeb;
+    }
+
+    &-form {
+      padding: 20px 30px 30px;
+
+      .MuiFormControl-root {
+        margin-bottom: 20px;
+        background: wheat;
+        border-radius: 4px;
+      }
+    }
+  }
+}

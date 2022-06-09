@@ -1,0 +1,60 @@
+.currency {
+
+  &-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .MuiFormControl-root {
+      .MuiInputLabel-root {
+        color: white!important;
+      }
+
+      input {
+        color: white!important;
+      }
+
+      .MuiOutlinedInput-notchedOutline {
+        border-color: rgba(221, 221, 221, 0.23) !important;
+      }
+    }
+  }
+
+  &-table {
+
+    .Mui-disabled {
+      color: #3c3c3c;
+    }
+    thead {
+      th {
+        font-weight: 700;
+        color: rgb(231, 238, 248);
+      }
+      .MuiTableCell-head {
+        border-bottom: 2px solid #90979d;
+      }
+    }
+
+
+    tbody {
+      td {
+        font-weight: 500;
+        color: rgb(231, 238, 248);
+        border-bottom: 1px solid rgb(73, 80, 87);
+      }
+    }
+  }
+}
+
+.addCurrency {
+  display: flex;
+  flex-direction: column;
+
+  form {
+    .MuiFormControl-root {
+      margin-bottom: 10px;
+    }
+  }
+}

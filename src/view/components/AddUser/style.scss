@@ -1,0 +1,26 @@
+.addUsers {
+
+  .MuiFormControl-root {
+    margin-bottom: 15px;
+  }
+
+  .MuiTextField-root {
+    margin-bottom: 0!important;
+  }
+
+  &-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .MuiFormControl-root {
+      max-width: 310px;
+    }
+  }
+
+  &-actions {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}

@@ -1,0 +1,24 @@
+.confirmDelete {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+
+  &-title {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 500;
+  }
+
+  &-subTitle {
+    text-align: center;
+  }
+
+  &-actions {
+    margin: 30px auto 0;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

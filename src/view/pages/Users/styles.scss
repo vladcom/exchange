@@ -1,0 +1,143 @@
+.users {
+  padding: 20px;
+  background: #14151A;
+  max-width: 1440px;
+  width: 100%;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+
+  &-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .MuiPaginationItem-root, .MuiTablePagination-toolbar{
+      color: rgb(231, 238, 248);
+
+      svg {
+        fill: rgb(231, 238, 248);
+      }
+    }
+
+    .MuiTablePagination-displayedRows, .MuiTablePagination-actions {
+      display: none;
+    }
+  }
+
+  &-table {
+
+    .Mui-disabled {
+      color: #3c3c3c;
+    }
+    thead {
+      th {
+        font-weight: 700;
+        color: rgb(231, 238, 248);
+      }
+      .MuiTableCell-head {
+        border-bottom: 2px solid #90979d;
+      }
+    }
+
+
+    tbody {
+      td {
+        font-weight: 500;
+        color: rgb(231, 238, 248);
+        border-bottom: 1px solid rgb(73, 80, 87);
+      }
+    }
+  }
+
+  &-filters {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 8px;
+      margin-right: 20px;
+
+      &-label {
+        width: 70px;
+        margin-right: 15px;
+      }
+
+      &-input {
+        max-width: 200px;
+        width: 100%;
+
+        svg {
+          fill: #495057;
+        }
+      }
+
+      .MuiOutlinedInput-root {
+        color: #F8F8F8;
+        &:hover {
+          border-color: #495057;
+        }
+      }
+      .MuiOutlinedInput-notchedOutline {
+        border-color: #495057;
+        &:hover {
+          border-color: #495057!important;
+        }
+      }
+      .MuiOutlinedInput-notchedOutline {
+        border-color: #495057!important;
+        &:hover {
+          border-color: #495057!important;
+        }
+      }
+      .Mui-focused {
+        border-color: #495057!important;
+      }
+    }
+  }
+}
+
+.selectedUser {
+  padding: 20px;
+  background: #14151A;
+  max-width: 1440px;
+  width: 100%;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+
+  &-title {
+    text-align: center;
+    font-size: 21px;
+  }
+
+  &-options {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    &-item {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+
+      &-value {
+        color: #707070;
+      }
+    }
+  }
+}

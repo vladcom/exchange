@@ -1,0 +1,19 @@
+stages:
+  - build-dev
+  
+deploy-develop:
+  stage: build-dev
+  tags:
+    - dev-urich
+
+  script:
+    - cd /app/exmoney.urich.work
+    - git reset --hard
+    - git pull origin dev
+    - npm install
+    - npm run build
+    - ls -la
+
+  environment: development
+  only:
+    - dev
